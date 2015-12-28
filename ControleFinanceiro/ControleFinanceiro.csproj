@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C171C357-B0E9-44C1-A85A-4329A2FD8A10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControleFinanceiro</RootNamespace>
+    <AssemblyName>ControleFinanceiro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>money_bills.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefinicaoImportacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefinicaoImportacao.Designer.cs">
+      <DependentUpon>DefinicaoImportacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdicaoLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdicaoLancamento.Designer.cs">
+      <DependentUpon>EdicaoLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoPizzaSubTipoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficoPizzaSubTipoForm.Designer.cs">
+      <DependentUpon>GraficoPizzaSubTipoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficosForm.Designer.cs">
+      <DependentUpon>GraficosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoTimeLineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficoTimeLineForm.Designer.cs">
+      <DependentUpon>GraficoTimeLineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoTimelineLancamentoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficoTimelineLancamentoForm.Designer.cs">
+      <DependentUpon>GraficoTimelineLancamentoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoTimeLineReceitaDespesaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficoTimeLineReceitaDespesaForm.Designer.cs">
+      <DependentUpon>GraficoTimeLineReceitaDespesaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoTimeLineSubTipoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficoTimeLineSubTipoForm.Designer.cs">
+      <DependentUpon>GraficoTimeLineSubTipoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficoTimeLineTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficoTimeLineTipo.Designer.cs">
+      <DependentUpon>GraficoTimeLineTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportarArquivoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportarArquivoForm.Designer.cs">
+      <DependentUpon>ImportarArquivoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportarExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportarExcelForm.Designer.cs">
+      <DependentUpon>ImportarExcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LancamentosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LancamentosForm.Designer.cs">
+      <DependentUpon>LancamentosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MdiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdiForm.Designer.cs">
+      <DependentUpon>MdiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelatoriosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatoriosForm.Designer.cs">
+      <DependentUpon>RelatoriosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSources.cs" />
+    <EmbeddedResource Include="DefinicaoImportacao.resx">
+      <DependentUpon>DefinicaoImportacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdicaoLancamento.resx">
+      <DependentUpon>EdicaoLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficoPizzaSubTipoForm.resx">
+      <DependentUpon>GraficoPizzaSubTipoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficosForm.resx">
+      <DependentUpon>GraficosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficoTimeLineForm.resx">
+      <DependentUpon>GraficoTimeLineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficoTimelineLancamentoForm.resx">
+      <DependentUpon>GraficoTimelineLancamentoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficoTimeLineReceitaDespesaForm.resx">
+      <DependentUpon>GraficoTimeLineReceitaDespesaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficoTimeLineSubTipoForm.resx">
+      <DependentUpon>GraficoTimeLineSubTipoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficoTimeLineTipo.resx">
+      <DependentUpon>GraficoTimeLineTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportarArquivoForm.resx">
+      <DependentUpon>ImportarArquivoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportarExcelForm.resx">
+      <DependentUpon>ImportarExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LancamentosForm.resx">
+      <DependentUpon>LancamentosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MdiForm.resx">
+      <DependentUpon>MdiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RelatoriosForm.resx">
+      <DependentUpon>RelatoriosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Grafico1.rdlc" />
+    <EmbeddedResource Include="Relatorios\GraficoPizzaSubTipo.rdlc" />
+    <EmbeddedResource Include="Relatorios\Lancamentos.rdlc" />
+    <EmbeddedResource Include="Relatorios\LancamentosTipo.rdlc" />
+    <EmbeddedResource Include="Relatorios\TimeLine.rdlc" />
+    <EmbeddedResource Include="Relatorios\TimeLineLancamento.rdlc" />
+    <EmbeddedResource Include="Relatorios\TimeLineReceitaDespesa.rdlc" />
+    <EmbeddedResource Include="Relatorios\TimelineSubTipos.rdlc" />
+    <EmbeddedResource Include="Relatorios\TimeLineTipo.rdlc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ReportDataSources.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControleFinanceiroCore\ControleFinanceiroCore.csproj">
+      <Project>{742BF936-E305-460D-885D-F67F8B556F5C}</Project>
+      <Name>ControleFinanceiroCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1441075976_Money.ico" />
+    <Content Include="1441076028_money.ico" />
+    <Content Include="1441076039_gnumeric.ico" />
+    <Content Include="money_bills.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

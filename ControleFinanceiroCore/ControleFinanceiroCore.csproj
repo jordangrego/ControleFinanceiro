@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{742BF936-E305-460D-885D-F67F8B556F5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControleFinanceiroCore</RootNamespace>
+    <AssemblyName>ControleFinanceiroCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\DadosControleFinanceiro.cs" />
+    <Compile Include="Business\LancamentosBcl.cs" />
+    <Compile Include="Business\SubTipoLancamentoBcl.cs" />
+    <Compile Include="Business\TimeLineBcl.cs" />
+    <Compile Include="Business\TipoLancamentoBcl.cs" />
+    <Compile Include="DataAccess\LancamentoDal.cs" />
+    <Compile Include="DataAccess\SubTipoLancamentoDal.cs" />
+    <Compile Include="DataAccess\TipoLancamentoDal.cs" />
+    <Compile Include="Entities\Base.cs" />
+    <Compile Include="Entities\Lancamento.cs" />
+    <Compile Include="Entities\LancamentoCriterio.cs" />
+    <Compile Include="Entities\SubTipoLancamento.cs" />
+    <Compile Include="Entities\TimeLineCriterio.cs" />
+    <Compile Include="Entities\TimeLineSubTipoCriterio.cs" />
+    <Compile Include="Entities\TimeLine.cs" />
+    <Compile Include="Entities\TipoLancamento.cs" />
+    <Compile Include="Enums\ControleFinanceiroEnumErro.cs" />
+    <Compile Include="Enums\EnumSubTipoLancamento.cs" />
+    <Compile Include="Enums\EnumTiposLancamento.cs" />
+    <Compile Include="Exceptions\ControleFinanceiroException.cs" />
+    <Compile Include="Ofx\ConversorExcel.cs" />
+    <Compile Include="Ofx\ConversorOfx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\MensagensErro.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MensagensErro.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\UtilBase.cs" />
+    <Compile Include="Util\UtilComum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\MensagensErro.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MensagensErro.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Entities\Diagrama.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
